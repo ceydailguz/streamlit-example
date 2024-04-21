@@ -5,6 +5,12 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import string
+import sqlite3
+import datetime
+
+zaman=str(datetime.datetime.now()
+
+connsqlite3.connect
 
 df=pd.read_csv("e-ticaret_urun_yorumlari.csv.zip",on_bad_lines="skip",delimiter=";")
 
@@ -56,6 +62,7 @@ if btn:
     st.subheader(s)
     st.write("Model Skoru:",skor)
 
-
+    c.execute("INSERT INTO yorumlar VALUES(?,?,?)",(y,s,zaman))
+    
 
 
