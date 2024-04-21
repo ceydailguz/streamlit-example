@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import string
 
-df=pd.read_csv("e-ticaret_urun_yorumlari.csv",on_bad_lines="skip",delimiter=";")
+df=pd.read_csv("e-ticaret_urun_yorumlari.csv.zip",on_bad_lines="skip",delimiter=";")
 
 
 def temizle(sutun):
