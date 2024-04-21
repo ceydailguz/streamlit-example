@@ -8,7 +8,7 @@ import string
 import sqlite3
 import datetime
 
-zaman=str(datetime.datetime.now()
+zaman=str(datetime.datetime.now())
 
 connsqlite3.connect
 
